@@ -16,6 +16,8 @@
 }
 
 body {
+  max-width: 1400px;
+  background-color: black;
   scroll-behavior: smooth;
   max-width: 1440px;
   margin: auto;
@@ -129,7 +131,7 @@ header .headerContainer article div {
   margin-top: 150px;
 }
 .mainSectionTwo article figure {
-  width: 20%;
+  width: 300px;
   position: absolute;
 }
 .mainSectionTwo article figure img {
@@ -178,7 +180,7 @@ header .headerContainer article div {
 
 /* =====  THE GOLDEN BEAR section (black) ===== */
 .mainSectionThree {
-  height: 120vh;
+  height: 1150px;
   background-color: black;
   color: #fff;
 }
@@ -209,34 +211,90 @@ header .headerContainer article div {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
+.mainSectionThree article div:nth-of-type(3) {
+  display: flex;
+  justify-content: center;
+}
+.mainSectionThree article div:nth-of-type(3) figure:nth-of-type(1) {
+  position: absolute;
+  height: 700px;
+  width: 700px;
+  transform: translate(-800px, 300px);
+}
+.mainSectionThree article div:nth-of-type(3) figure:nth-of-type(1) img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.mainSectionThree article div:nth-of-type(3) figure:nth-of-type(2) {
+  position: absolute;
+  height: 500px;
+  width: 400px;
+  transform: translate(-400px, 450px);
+}
+.mainSectionThree article div:nth-of-type(3) figure:nth-of-type(2) img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 /* =====  THE POPPY BEAR section (white) ===== */
 .mainSectionFour {
-  height: 150vh;
+  height: 1500px;
   background-color: #FFFFFF;
   color: #222222;
 }
 .mainSectionFour article {
-  margin-top: 200px !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80%;
   margin: auto;
 }
+.mainSectionFour article div:nth-of-type(1) {
+  margin-top: 400px !important;
+}
 .mainSectionFour article div:nth-of-type(1) h2 {
   font-size: 4rem;
   width: 30%;
   line-height: 50px;
   margin-bottom: 20px;
-  margin-bottom: 50px !important;
+  margin-bottom: 300px !important;
 }
 .mainSectionFour article p {
   line-height: 50px;
 }
 .mainSectionFour article div:nth-of-type(2) {
   width: 30%;
-  margin-bottom: 20px;
+  margin-top: 400px !important;
+  margin-bottom: 300px;
+}
+.mainSectionFour div:nth-of-type(3) {
+  display: flex;
+  justify-content: center;
+}
+.mainSectionFour div:nth-of-type(3) figure:nth-of-type(1) {
+  position: absolute;
+  height: 500px;
+  width: 400px;
+  transform: translate(-900px, 300px);
+  z-index: 1;
+}
+.mainSectionFour div:nth-of-type(3) figure:nth-of-type(1) img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.mainSectionFour div:nth-of-type(3) figure:nth-of-type(2) {
+  position: absolute;
+  height: 700px;
+  width: 700px;
+  transform: translate(-450px, 200px);
+}
+.mainSectionFour div:nth-of-type(3) figure:nth-of-type(2) img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /* ===== FOOTER ====== (black) */
