@@ -1,0 +1,19 @@
+@mixin headline{
+    font-family: lora;
+}
+
+@mixin smallText {
+    font-family: workSans;
+}
+
+@mixin articleLayout {
+    width: 80%;
+    margin: auto;
+}
+
+@mixin bodyHeadline {
+    font-size: 4rem;
+    width: 30%;
+    line-height: 50px;
+    margin-bottom: 20px;
+}

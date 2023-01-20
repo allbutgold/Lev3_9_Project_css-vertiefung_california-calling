@@ -1,7 +1,262 @@
+/* ===== IMPORTS ====== */
+/* ===== Global Settings ====== */
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: lora;
+  src: url(../fonts/Lora/Lora-VariableFont_wght.ttf);
+}
+/* ===== Global Settings ====== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  max-width: 1440px;
+  margin: auto;
+}
+body h1, body h2, body h3, body h4 {
+  font-family: lora;
+}
+body h3 {
+  font-size: 3rem;
+}
+body h4 {
+  font-size: 1.5rem;
+}
+body p {
+  font-family: workSans;
+}
+body a {
+  font-family: workSans;
+}
+
+.rsvpButton {
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px 30px 10px 30px;
+  line-height: 80px;
+  color: white;
+}
+
+/* ===== HEADER (black ====== */
+header {
+  height: 1000px;
+  padding: 15%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
+header figure img {
+  width: 1px;
+  height: 180px;
+  position: absolute;
+  top: 0;
+}
+header .headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .headerContainer div:nth-of-type(1) h1 {
+  line-height: 70px;
+  font-size: 5rem;
+}
+header .headerContainer div:nth-of-type(1) h1 span {
+  color: black;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+header .headerContainer div:nth-of-type(1) p {
+  line-height: 70px;
+}
+header .headerContainer article {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerContainer article div {
+  width: 700px;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+/* ===== MAIN ====== */
+/* ===== LAST YEAR text section (black) ===== */
+.mainSectionOne {
+  height: 1400px;
+  background-color: black;
+  color: #fff;
+}
+.mainSectionOne article {
+  width: 80%;
+  margin: auto;
+}
+.mainSectionOne article h2 {
+  font-size: 5rem;
+  width: 80%;
+}
+.mainSectionOne article div:nth-of-type(2) {
+  margin-top: 100px;
+  height: 150px;
+}
+.mainSectionOne article div:nth-of-type(3) {
+  height: 150px;
+}
+.mainSectionOne article div:nth-of-type(4) {
+  height: 150px;
+}
+.mainSectionOne figure {
+  width: 450px;
+  transform: translate(210%, -110%);
+}
+.mainSectionOne figure img {
+  width: 100%;
+  height: 100%;
+}
+
+/* =====  STUCK IN THE MIDDLE section (white) ===== */
+.mainSectionTwo {
+  height: 1400px;
+  background-color: #FFFFFF;
+  color: #222222;
+  margin-top: 150px;
+}
+.mainSectionTwo article figure {
+  width: 20%;
+  position: absolute;
+}
+.mainSectionTwo article figure img {
+  width: 100%;
+  height: 100%;
+}
+.mainSectionTwo article figure:nth-of-type(1) {
+  transform: translate(930px, -250px);
+}
+.mainSectionTwo article figure:nth-of-type(2) {
+  transform: translate(30px, -50px);
+}
+.mainSectionTwo article figure:nth-of-type(3) {
+  transform: translate(1140px, 350px);
+}
+.mainSectionTwo article figure:nth-of-type(4) {
+  transform: translate(120px, 350px);
+}
+.mainSectionTwo article figure:nth-of-type(5) {
+  transform: translate(900px, 650px);
+}
+.mainSectionTwo article figure:nth-of-type(6) {
+  transform: translate(0px, 850px);
+}
+.mainSectionTwo article figure:nth-of-type(7) {
+  transform: translate(900px, 1350px);
+}
+.mainSectionTwo article:nth-of-type(2) {
+  width: 80%;
+  margin: auto;
+  width: 600px;
+}
+.mainSectionTwo article:nth-of-type(2) h3 {
+  font-size: 4rem;
+}
+.mainSectionTwo article:nth-of-type(2) p {
+  line-height: 30px;
+}
+.mainSectionTwo article:nth-of-type(3) {
+  margin: 800px auto 0 auto;
+  width: 600px;
+}
+.mainSectionTwo article:nth-of-type(3) p {
+  line-height: 30px;
+}
+
+/* =====  THE GOLDEN BEAR section (black) ===== */
+.mainSectionThree {
+  height: 120vh;
+  background-color: black;
+  color: #fff;
+}
+.mainSectionThree article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.mainSectionThree article div:nth-of-type(1) {
+  margin-top: 200px !important;
+}
+.mainSectionThree article div:nth-of-type(1) h2 {
+  font-size: 4rem;
+  width: 30%;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+.mainSectionThree article div:nth-of-type(1) p {
+  line-height: 50px;
+}
+.mainSectionThree article div:nth-of-type(2) {
+  margin-top: 200px !important;
+  width: 30%;
+}
+.mainSectionThree article div:nth-of-type(2) h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* =====  THE POPPY BEAR section (white) ===== */
+.mainSectionFour {
+  height: 150vh;
+  background-color: #FFFFFF;
+  color: #222222;
+}
+.mainSectionFour article {
+  margin-top: 200px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.mainSectionFour article div:nth-of-type(1) h2 {
+  font-size: 4rem;
+  width: 30%;
+  line-height: 50px;
+  margin-bottom: 20px;
+  margin-bottom: 50px !important;
+}
+.mainSectionFour article p {
+  line-height: 50px;
+}
+.mainSectionFour article div:nth-of-type(2) {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+/* ===== FOOTER ====== (black) */
+footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80vh;
+  background-color: black;
+  color: #fff;
+}
+footer article {
+  width: 80%;
+  margin: auto;
+}
+footer article h4 {
+  width: 35%;
+}
+footer article div:nth-of-type(1) p {
+  line-height: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */
